@@ -10,6 +10,7 @@ import IosShareIcon from "@mui/icons-material/IosShare";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 import SimpleDialog from "../components/Dialog.js";
 
@@ -52,23 +53,22 @@ const Home = () => {
   return (
     <main className="flex flex-col items-center pt-[64px]">
       <Image
-        src="https://avatars.githubusercontent.com/u/11678456?v=4"
+        src="/274014119_472555041168724_3761219825851015079_n.webp"
         width={96}
         height={96}
         className="border rounded-full mb-[16px]"
       />
 
       <div className="flex items-center">
-        <h1 className="font-bold text-[20px]">@FloSlv</h1>
-        <VerifiedIcon fontSize="small" className="text-[#00b6ff]" />
+        <h1 className="font-bold text-[20px]">Eklidens Muster</h1>
       </div>
 
       <div className="mt-[32px] w-[100%] max-w-[680px]">
-        <a href="https://flo-slv.dev" target="_blank" rel="noopener norefferer">
+        <a href="https://www.instagram.com/eklidens_muster/" target="_blank" rel="noopener norefferer">
           <div className={`${baseStyles.item} group/item`}>
-            <HouseIcon fontSize="large" className="ml-[10px]" />
-            <div>My personal website</div>
-            <div className="mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:text-black">
+            <InstagramIcon fontSize="large" className="ml-[10px]" />
+            <div>Instagram</div>
+            <div className="mr-[10px] invisible">
               <IosShareIcon onClick={(e) => handleClickOpen(e)} />
             </div>
           </div>
@@ -81,8 +81,8 @@ const Home = () => {
         >
           <div className={`${baseStyles.item} group/item`}>
             <ParkIcon fontSize="large" className="ml-[10px]" />
-            <div>Link-in-bio page</div>
-            <div className="mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:text-black">
+            <div>Kommer snart</div>
+            <div className="mr-[10px] invisible ">
               <IosShareIcon onClick={(e) => handleClickOpen(e)} />
             </div>
           </div>
@@ -95,8 +95,8 @@ const Home = () => {
         >
           <div className={`${baseStyles.item} group/item`}>
             <WebIcon fontSize="large" className="ml-[10px]" />
-            <div>My custom browser homepage</div>
-            <div className="mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:text-black">
+            <div>Kommer snart</div>
+            <div className="mr-[10px] invisible ">
               <IosShareIcon onClick={(e) => handleClickOpen(e)} />
             </div>
           </div>
@@ -108,30 +108,6 @@ const Home = () => {
         open={open}
         onClose={handleClose}
       />
-
-      <div className="flex gap-2 mt-[24px]">
-        <a
-          href="https://github.com/flo-slv"
-          target="_blank"
-          rel="noopener norefferer"
-        >
-          <GitHubIcon fontSize="large" className={baseStyles.icon} />
-        </a>
-        <a
-          href="https://linkedin.com/in/flo-slv"
-          target="_blank"
-          rel="noopener norefferer"
-        >
-          <LinkedInIcon fontSize="large" className={baseStyles.icon} />
-        </a>
-        <a
-          href="https://twitter.com/floslv1"
-          target="_blank"
-          rel="noopener norefferer"
-        >
-          <TwitterIcon fontSize="large" className={baseStyles.icon} />
-        </a>
-      </div>
     </main>
   );
 };
