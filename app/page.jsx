@@ -75,7 +75,7 @@ const Home = () => {
         </a>
 
         <a
-          href="https://links.flo-slv.dev"
+          href="#"
           target="_blank"
           rel="noopener norefferer"
         >
@@ -89,7 +89,7 @@ const Home = () => {
         </a>
 
         <a
-          href="https://github.com/Flo-Slv/browser-homepage"
+          href="#"
           target="_blank"
           rel="noopener norefferer"
         >
