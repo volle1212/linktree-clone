@@ -60,7 +60,7 @@ const Home = () => {
       />
 
       <div className="flex items-center">
-        <h1 className="font-bold text-[20px]">Eklidens Muster</h1>
+        <h1 className="font-bold text-[30px]">Eklidens muster</h1>
       </div>
 
       <div className="mt-[32px] w-[100%] max-w-[680px]">

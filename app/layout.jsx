@@ -4,7 +4,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <head />
-      <body className="h-screen bg-gradient-to-tl from-sky-400 to-sky-200">
+      <body className={`h-screen bg-[url('../public/muster/1.jfif')] bg-no-repeat bg-cover bg-left`}>
         {children}
       </body>
     </html>
