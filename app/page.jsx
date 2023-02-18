@@ -7,6 +7,7 @@ import WebIcon from "@mui/icons-material/Web";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import SimpleDialog from "../components/Dialog.js";
+import EmailIcon from '@mui/icons-material/Email';
 
 const TikTokIcon = ({ color = "#000000" }) => {
   return (
@@ -57,6 +58,14 @@ const Home = () => {
     setSelectedValue(value);
   };
 
+  function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+
   return (
     <main className="flex flex-col items-center pt-[64px]">
       <Image
@@ -65,6 +74,7 @@ const Home = () => {
         height={96}
         className="border rounded-full mb-[16px]"
       />
+      <p id="p2" className="hidden">Hi, I'm the 2nd TEXT</p><br/>
 
       <div className="flex items-center">
         <h1 className="font-bold text-[30px]">Eklidens muster</h1>
@@ -93,15 +103,18 @@ const Home = () => {
             </div>
           </div>
         </a>
-
+        
         <a
-          href="#"
+          href="mailto:eklidensmuster@gmail.com"
           target="_blank"
           rel="noopener norefferer"
+          data-bs-toggle="modal" 
+          data-bs-target="#exampleModal"
+          className="w-1/2"
         >
           <div className={`${baseStyles.item} group/item`}>
-            <WebIcon fontSize="large" className="ml-[10px]" />
-            <p className="absolute pl-[42%] text-center">Kommer snart</p>
+            <EmailIcon fontSize="large" className="ml-[10px]" />
+            <p className="absolute pl-[42%] text-left">Kontakta oss <br />eklidensmsuter@gmail.com</p>
             <div className="mr-[10px] invisible ">
               <IosShareIcon onClick={(e) => handleClickOpen(e)} />
             </div>
@@ -114,7 +127,13 @@ const Home = () => {
         open={open}
         onClose={handleClose}
       />
+
+      
     </main>
+
+    
+
+
   );
 };
 
