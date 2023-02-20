@@ -105,7 +105,7 @@ const Home = () => {
         </a>
         
         <a
-          href="mailto:eklidensmuster@gmail.com"
+          href="mailto:eklidensmusterab@gmail.com"
           target="_blank"
           rel="noopener norefferer"
           data-bs-toggle="modal" 
@@ -114,7 +114,7 @@ const Home = () => {
         >
           <div className={`${baseStyles.item} group/item`}>
             <EmailIcon fontSize="large" className="ml-[10px]" />
-            <p className="absolute pl-[42%] text-left">Kontakta oss <br />eklidensmsuter@gmail.com</p>
+            <p className="absolute pl-[42%] text-left">Kontakta oss <br />eklidensmsuterab@gmail.com</p>
             <div className="mr-[10px] invisible ">
               <IosShareIcon onClick={(e) => handleClickOpen(e)} />
             </div>
